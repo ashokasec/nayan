@@ -1,14 +1,16 @@
 import { bricolage } from '@/_libs/fonts'
 import { Github } from 'lucide-react'
+import Image from 'next/image'
 import React from 'react'
+import Logo from "@/assets/logo.svg"
 
 const Navbar = () => {
     return (
         <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm py-3">
             <nav className="max-w-[90rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between bg-gray-400/15 backdrop-blur-md border border-gray-300/10 py-3 rounded-md">
                 <div className="flex items-center justify-between">
-                    <a className={`flex-none text-xl font-semibold text-white focus:outline-none focus:opacity-80 ${bricolage.className}`} href="#" aria-label="Brand">
-                        ashokasec/ui
+                    <a className={`flex-none text-xl font-semibold text-white leading-none focus:outline-none focus:opacity-80 flex items-center ${bricolage.className}`} href="#" aria-label="Brand">
+                        <Image src={Logo} width={24} height={24} alt='ashokasec/ui&amp;s logo' className='mr-2' />ashokasec/ui
                     </a>
                 </div>
                 <div id="hs-navbar-example" className="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block" aria-labelledby="hs-navbar-example-collapse">
