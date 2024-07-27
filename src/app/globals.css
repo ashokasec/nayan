@@ -7,7 +7,7 @@
   ---foreground: #ffffff;
 }
 
-body{
+body {
   background-color: var(---background);
   color: var(---foreground);
 }
@@ -15,5 +15,17 @@ body{
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer components {
+  article h1 {
+    @apply text-3xl lg:text-4xl font-semibold leading-none w-fit border-b-2 pb-1
+  }
+  article h2 {
+    @apply text-2xl lg:text-3xl font-semibold leading-none w-fit border-b-2 pb-1 mt-8
+  }
+  article .txt-normal {
+    @apply text-base lg:text-[17px] font-light leading-snug text-gray-200
   }
 }

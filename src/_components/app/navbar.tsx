@@ -6,11 +6,11 @@ import Logo from "@/assets/logo.svg"
 
 const Navbar = () => {
     return (
-        <header className="flex flex-col flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm pb-3 sticky top-0">
+        <header className="flex flex-col flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm pb-3 sticky top-0 px-4">
             <div className='h-3 w-full bg-black/40 backdrop-blur-lg'/>
             <nav className="max-w-[90rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between bg-gray-500/15 backdrop-blur-lg border border-gray-300/10 py-3 rounded-md">
                 <div className="flex items-center justify-between">
-                    <a className={`flex-none text-xl font-semibold text-white leading-none focus:outline-none focus:opacity-80 flex items-center ${bricolage.className}`} href="#" aria-label="Brand">
+                    <a className={`flex-none text-lg lg:text-xl font-semibold text-white leading-none focus:outline-none focus:opacity-80 flex items-center ${bricolage.className}`} href="#" aria-label="Brand">
                         <Image src={Logo} width={24} height={24} alt='ashokasec/ui&amp;s logo' className='mr-2 mix-blend-lighten' />ashokasec/ui
                     </a>
                 </div>
