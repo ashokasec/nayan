@@ -3,6 +3,7 @@ import { Github } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
 import Logo from "@/assets/logo.svg"
+import Link from 'next/link'
 
 const Navbar = () => {
     return (
@@ -10,9 +11,9 @@ const Navbar = () => {
             <div className='h-3 w-full bg-black/40 backdrop-blur-lg'/>
             <nav className="max-w-[90rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between bg-gray-500/15 backdrop-blur-lg border border-gray-300/10 py-3 rounded-md">
                 <div className="flex items-center justify-between">
-                    <a className={`flex-none text-lg lg:text-xl font-semibold text-white leading-none focus:outline-none focus:opacity-80 flex items-center ${bricolage.className}`} href="#" aria-label="Brand">
+                    <Link className={`flex-none text-lg lg:text-xl font-semibold text-white leading-none focus:outline-none focus:opacity-80 flex items-center ${bricolage.className}`} href="/" aria-label="Brand">
                         <Image src={Logo} width={24} height={24} alt='ashokasec/ui&amp;s logo' className='mr-2 mix-blend-lighten' />ashokasec/ui
-                    </a>
+                    </Link>
                 </div>
                 <div id="hs-navbar-example" className="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block" aria-labelledby="hs-navbar-example-collapse">
                     <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
