@@ -20,10 +20,10 @@ const UiDetails = ({ parentTitle, childTitle }: DetailsProps) => {
                 <p className='mt-6'>Below are some key features:</p>
                 <ul className='space-y-1 list-disc ml-4'>
                     <li className='mt-2'>
-                        <p><strong>Enter</strong>, <strong>Comma</strong> and <strong>NumpadEnter</strong> adds input in the list.</p>
+                        <p><strong className='font-semibold'>Enter</strong>, <strong className='font-semibold'>Comma</strong> and <strong className='font-semibold'>NumpadEnter</strong> adds input in the list.</p>
                     </li>
                     <li>
-                        <p><strong>Backspace</strong> removes last element from the list.</p>
+                        <p><strong className='font-semibold'>Backspace</strong> removes last element from the list.</p>
                     </li>
                 </ul>
                 <div className='bg-gray-400/5 rounded-md p-6 border border-gray-400/40 mt-10 w-full'>
