@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const Navbar = () => {
     return (
-        <header className="flex flex-col flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm pb-3 sticky top-0 px-4">
+        <header className="flex flex-col flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm pb-3 sticky top-0 px-4 z-10">
             <div className='h-3 w-full bg-black/40 backdrop-blur-lg'/>
             <nav className="max-w-[90rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between bg-gray-500/15 backdrop-blur-lg border border-gray-300/10 py-3 rounded-md">
                 <div className="flex items-center justify-between">

@@ -13,6 +13,14 @@ body {
   min-height: 100vh;
 }
 
+pre::-webkit-scrollbar{
+  height: 8px;
+  background-color: rgb(27, 27, 27);
+}
+pre::-webkit-scrollbar-thumb{
+  background: rgb(76, 76, 76);
+  border-radius: 0.25rem;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -28,5 +36,11 @@ body {
   }
   article .txt-normal {
     @apply text-base lg:text-[17px] font-light leading-snug text-gray-200
+  }
+  article pre{
+    @apply !bg-[#0e0e0f] p-6 border border-gray-400/40 mt-10 w-full !m-0 !rounded-none
+  }
+  article pre span{
+    @apply  !text-[15px]
   }
 }
