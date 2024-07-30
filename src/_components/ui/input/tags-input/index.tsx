@@ -9,7 +9,7 @@ export interface PillsItemProps {
     onRemove?: () => void;
 }
 
-export const PillsListItem = memo(({ item, removable, onRemove }: PillsItemProps) => {
+const PillsListItem: React.FC<PillsItemProps> = ({ item, removable, onRemove }) => {
     return (
         <li className={`rounded-full leading-none px-4 py-2 h-fit border border-gray-400/40 ${removable ? "flex items-center justify-center pr-2" : "pr-4"}`}>
             {item}
@@ -23,7 +23,10 @@ export const PillsListItem = memo(({ item, removable, onRemove }: PillsItemProps
             }
         </li>
     );
-});
+};
+
+const MemoizedPillsListItem = memo(PillsListItem);
+MemoizedPillsListItem.displayName = "PillsListItem";
 
 interface PillsListProps {
     data: string[];
