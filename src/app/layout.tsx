@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/_components/app/navbar";
+import Navbar from "@/_components/_app/navbar";
 import { inter } from "@/_libs/fonts";
-import Sidebar from "@/_components/app/sidebar";
+import Sidebar from "@/_components/_app/sidebar";
 
 export const metadata: Metadata = {
   title: "ashokasec/ui",
