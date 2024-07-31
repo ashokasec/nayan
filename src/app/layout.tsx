@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/_components/_app/navbar";
 import { inter } from "@/_libs/fonts";
-import Sidebar from "@/_components/_app/sidebar";
+import SidebarLH from "@/_components/_app/sidebar-lh";
+import SidebarRH from "@/_components/_app/sidebar-rh";
 
 export const metadata: Metadata = {
   title: "ashokasec/ui",
@@ -19,9 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <div className='max-w-[90rem] mx-auto flex'>
-          <Sidebar />
-          <div className="max-w-[70rem] w-full px-6 py-3">
+        <div className='max-w-[90rem] mx-auto flex relative'>
+          <SidebarLH />
+          <div className="w-full grid grid-cols-[59rem_auto]">
             {children}
           </div>
         </div>

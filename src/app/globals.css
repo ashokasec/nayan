@@ -33,10 +33,13 @@ pre::-webkit-scrollbar-corner{
 
 @layer components {
   article h1 {
-    @apply text-3xl lg:text-4xl font-semibold leading-none w-fit border-b-2 pb-1
+    @apply text-2xl lg:text-3xl font-semibold leading-none w-fit border-b-2 pb-1
   }
   article h2 {
-    @apply text-xl lg:text-2xl font-semibold leading-none w-fit border-b-2 pb-1 mt-8
+    @apply text-lg lg:text-xl font-semibold leading-none w-fit border-b-2 pb-1 mt-8
+  }
+  article h3 {
+    @apply text-[17px] lg:text-lg font-semibold leading-none border-b border-gray-400/40 pb-2 mt-8 mb-4
   }
   article .txt-normal {
     @apply text-base lg:text-[17px] font-light leading-snug text-gray-200

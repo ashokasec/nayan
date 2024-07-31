@@ -1,14 +1,15 @@
 import UiDetails from '@/_components/_app/details'
+import SidebarRH from '@/_components/_app/sidebar-rh'
 import React from 'react'
 
 const page = () => {
 
-  const features = [
-    <><strong className='font-semibold'>Enter</strong>, <strong className='font-semibold'>Comma</strong> and <strong className='font-semibold'>NumpadEnter</strong> adds input in the list.</>,
-    <><strong className='font-semibold'>Backspace</strong> removes last element from the list.</>
-  ]
+    const features = [
+        <><strong className='font-semibold'>Enter</strong>, <strong className='font-semibold'>Comma</strong> and <strong className='font-semibold'>NumpadEnter</strong> adds input in the list.</>,
+        <><strong className='font-semibold'>Backspace</strong> removes last element from the list.</>
+    ]
 
-  const code = `"use client"
+    const code = `"use client"
 
 import { Plus } from 'lucide-react'
 import React, { memo, useState } from 'react';
@@ -86,15 +87,17 @@ const PillsList: React.FC<PillsListProps> = ({ data, removable, onRemove }) => {
 
 export default PillsList;`
 
-  return (
-    <UiDetails
-      parentTitle='Input'
-      childTitle='Tags Input'
-      featuresList={features}
-      code={code}
-    >
-    </UiDetails>
-  )
+    return (
+        <>
+            <UiDetails
+                parentTitle='Input'
+                childTitle='Tags Input'
+                featuresList={features}
+                code={code}
+            />
+            <SidebarRH />
+        </>
+    )
 }
 
 export default page
