@@ -1,12 +1,20 @@
 import UiDetails from '@/_components/_app/details'
+import PillsList from '@/_components/ui/input/tags-input'
 import React from 'react'
 
 const page = () => {
 
-    const features = [
+    const sample = ["React.Js", "Next.Js"]
+
+    const title = "Input"
+    const subtitle = "Tags Input"
+
+    const featuresList = [
         <><strong className='font-semibold'>Enter</strong>, <strong className='font-semibold'>Comma</strong> and <strong className='font-semibold'>NumpadEnter</strong> adds input in the list.</>,
         <><strong className='font-semibold'>Backspace</strong> removes last element from the list.</>
     ]
+
+    const renderComponent = <PillsList data={sample} />
 
     const code = `"use client"
 
@@ -88,10 +96,12 @@ export default PillsList;`
 
     return (
         <UiDetails
-            parentTitle='Input'
-            childTitle='Tags Input'
-            featuresList={features}
-            code={code}
+            title={title}
+            subtitle={subtitle}
+            featuresList={featuresList}
+            renderComponent={renderComponent}
+            componentCode={code}
+            usageCode={code}
         />
     )
 }
