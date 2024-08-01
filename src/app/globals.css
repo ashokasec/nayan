@@ -13,16 +13,39 @@ body {
   min-height: 100vh;
 }
 
+body::-webkit-scrollbar{
+  height: 12px;
+  width: 14px;
+  background-color: rgb(27, 27, 27);
+}
+body::-webkit-scrollbar-thumb{
+  background: rgb(57, 57, 57);
+  border-radius: 0.25rem;
+}
+body::-webkit-scrollbar-corner{
+  background-color: rgb(27, 27, 27);
+}
+
 pre::-webkit-scrollbar{
   height: 8px;
   width: 8px;
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(19, 18, 18);
 }
 pre::-webkit-scrollbar-thumb{
-  background: rgb(76, 76, 76);
+  background: rgb(36, 35, 35);
   border-radius: 0.25rem;
 }
 pre::-webkit-scrollbar-corner{
+  background-color: rgb(27, 27, 27);
+}
+.rh-sidebar::-webkit-scrollbar{
+  width: 6px;
+}
+.rh-sidebar::-webkit-scrollbar-thumb{
+  background: rgb(36, 35, 35);
+  border-radius: 0.25rem;
+}
+.rh-sidebar::-webkit-scrollbar-corner{
   background-color: rgb(27, 27, 27);
 }
 @layer utilities {
@@ -39,13 +62,13 @@ pre::-webkit-scrollbar-corner{
     @apply text-lg lg:text-xl font-semibold leading-none w-fit border-b-2 pb-1 mt-8
   }
   article h3 {
-    @apply text-[17px] lg:text-lg font-semibold leading-none border-b border-gray-400/40 pb-2 mt-8 mb-4
+    @apply text-[17px] lg:text-[19px] font-semibold leading-none border-b border-algae pb-3 mt-8 mb-4
   }
   article .txt-normal {
-    @apply text-base lg:text-[17px] font-light leading-snug text-gray-200
+    @apply text-[15px] lg:text-base font-light leading-snug text-gray-200
   }
   article pre{
-    @apply !bg-[#0e0e0f] p-6 border border-gray-400/40 mt-10 w-full !m-0 !rounded-none
+    @apply !bg-[#0e0e0f] p-6 border border-algae mt-10 w-full !m-0 !rounded-none
   }
   article pre span{
     @apply  !text-[15px]

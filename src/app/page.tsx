@@ -5,7 +5,7 @@ import React from 'react'
 const page = () => {
   return (
     <>
-      <article className={`${bricolage.className} md:pr-12 lg:pr-28 `}>
+      <article className={`${bricolage.className} md:pr-12 lg:pr-28 px-6 py-3 `}>
         <h1>Welcome to ashokasec/ui</h1>
         <p className='mt-8'>Hey there! 👋</p>
         <p className="txt-normal mt-4">I&apos;m ashokasec, and this is my personal collection of UI components. I created this library for myself and for anyone else who might find it useful. Every time I make a new component for one of my projects, I&apos;ll add it here.</p>

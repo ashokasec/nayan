@@ -11,7 +11,7 @@ export interface PillsItemProps {
 
 const PillsListItem: React.FC<PillsItemProps> = ({ item, removable, onRemove }) => {
     return (
-        <li className={`rounded-full leading-none px-4 py-2 h-fit border border-gray-400/40 ${removable ? "flex items-center justify-center pr-2" : "pr-4"}`}>
+        <li className={`rounded-full leading-none px-4 py-2 h-fit border border-algae ${removable ? "flex items-center justify-center pr-2" : "pr-4"}`}>
             {item}
             {removable &&
                 <span
@@ -69,7 +69,7 @@ const PillsList: React.FC<PillsListProps> = ({ data, removable, onRemove }) => {
                     onRemove={() => onRemove && onRemove(index)}
                 />
             ))}
-            <input type="text" className='rounded-full leading-none px-4 py-2 h-fit border border-gray-400/40 font-light outline-none bg-gray-400/15' spellCheck="false" placeholder='Add a fruit...' value={inputValue} onChange={handleInputChange} onKeyUp={handleKeyUp} />
+            <input type="text" className='rounded-full leading-none px-4 py-2 h-fit border border-algae font-light outline-none bg-gray-400/15' spellCheck="false" placeholder='Add a fruit...' value={inputValue} onChange={handleInputChange} onKeyUp={handleKeyUp} />
         </ul>
     );
 };
