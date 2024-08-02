@@ -1,5 +1,4 @@
 import React from 'react'
-import he from "he"
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
 import { vscDarkPlus as CodeTheme } from "react-syntax-highlighter/dist/esm/styles/prism"
 import { Copy } from 'lucide-react'

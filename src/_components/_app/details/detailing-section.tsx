@@ -15,4 +15,6 @@ const DetailingSection = React.forwardRef<HTMLDivElement, PreviewProps>(({ title
     );
 });
 
+DetailingSection.displayName = 'DetailingSection';
+
 export default DetailingSection;
